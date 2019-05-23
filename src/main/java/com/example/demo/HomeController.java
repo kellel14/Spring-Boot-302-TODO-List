@@ -17,13 +17,13 @@ public class HomeController {
     TODORepository todoRepository;
     @RequestMapping("/")
     public String listTODO(Model model){
-        model.addAttribute("todo", todoRepository.findAll());
+        model.addAttribute("todos", todoRepository.findAll());
 
         return "list";
 
     }
     @GetMapping("/add")
-    public String jobForm(Model model){
+    public String todoForm(Model model){
         model.addAttribute("todo", new TODO());
         return "todoform";
     }

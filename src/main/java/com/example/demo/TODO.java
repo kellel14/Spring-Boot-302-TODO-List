@@ -14,15 +14,15 @@ public class TODO {
     private long id;
 
     @NotNull
-    @Size(min = 4)
-    private String task;
+    @Size(min=3)
+    private String taskname;
 
     @NotNull
-    @Size(min = 3)
+    @Size(min=3)
     private String duedate;
 
     @NotNull
-    @Size(min = 10)
+    @Size(min=10)
     private String priority;
 
     public long getId() {
@@ -33,12 +33,12 @@ public class TODO {
         this.id = id;
     }
 
-    public String getTask() {
-        return task;
+    public String getTaskname() {
+        return taskname;
     }
 
-    public void setTask(String task) {
-        this.task = task;
+    public void setTaskname(String taskname) {
+        this.taskname = taskname;
     }
 
     public String getDuedate() {
@@ -56,5 +56,4 @@ public class TODO {
     public void setPriority(String priority) {
         this.priority = priority;
     }
-
 }
